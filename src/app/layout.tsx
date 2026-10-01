@@ -14,7 +14,7 @@ const vazirmatn = Vazirmatn({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tara-store.onrender.com'
+    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tara-stationery.onrender.com'
   ),
   title: {
     default: 'تارا | فروشگاه آنلاین لوازم‌التحریر',
