@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img">
+
+  <defs>
+    <linearGradient id="bg181" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF1EC"/>
+      <stop offset="100%" stop-color="#FFDCD0"/>
+    </linearGradient>
+    <radialGradient id="glow181" cx="30%" cy="22%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft181" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#9C3A22" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="dots181" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#9C3A22" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg181)"/>
+  <rect width="640" height="640" fill="url(#dots181)"/>
+  <rect width="640" height="640" fill="url(#glow181)"/>
+  <ellipse cx="320" cy="524" rx="150" ry="24" fill="#9C3A22" fill-opacity="0.10"/>
+
+  <g transform="translate(320 300) rotate(-16)" filter="url(#soft21)">
+    <path d="M-190 96 Q-190 44 -140 44 L150 44 Q190 44 190 96 L190 130 L-190 130 Z" fill="#9C3A22"/>
+    <path d="M-180 60 Q-176 4 -120 4 L120 4 Q176 4 180 60 Z" fill="#F06A45"/>
+    <path d="M-180 60 Q-176 4 -120 4 L120 4 Q176 4 180 60 Z" fill="#ffffff" fill-opacity="0.16"/>
+    <rect x="-70" y="118" width="140" height="46" rx="20" fill="#F7B09B"/>
+    <rect x="-26" y="-40" width="52" height="52" rx="12" fill="#9C3A22" fill-opacity="0.6"/>
+  </g>
+</svg>

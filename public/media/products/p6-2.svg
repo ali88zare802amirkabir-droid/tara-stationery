@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img">
+
+  <defs>
+    <linearGradient id="bg125" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EAF6FF"/>
+      <stop offset="100%" stop-color="#D3EBFF"/>
+    </linearGradient>
+    <radialGradient id="glow125" cx="30%" cy="22%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft125" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#1F5B96" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="dots125" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#1F5B96" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg125)"/>
+  <rect width="640" height="640" fill="url(#dots125)"/>
+  <rect width="640" height="640" fill="url(#glow125)"/>
+  <ellipse cx="320" cy="524" rx="150" ry="24" fill="#1F5B96" fill-opacity="0.10"/>
+
+  <g transform="translate(320 300) rotate(20)" filter="url(#soft7)">
+    <rect x="-118" y="-104" width="236" height="150" rx="26" fill="#1F5B96"/>
+    <rect x="-118" y="-104" width="236" height="150" rx="26" fill="#ffffff" fill-opacity="0.10"/>
+    <ellipse cx="0" cy="-30" rx="74" ry="34" fill="#2F8AD6"/>
+    <ellipse cx="0" cy="-30" rx="34" ry="15" fill="#1F5B96" fill-opacity="0.55"/>
+    <circle cx="0" cy="-30" r="9" fill="#ffffff" fill-opacity="0.7"/>
+    <rect x="-72" y="14" width="144" height="14" rx="7" fill="#ffffff" fill-opacity="0.22"/>
+    <circle cx="-84" cy="4" r="7" fill="#93CBF0"/>
+    <circle cx="84" cy="4" r="7" fill="#93CBF0"/>
+  </g>
+</svg>

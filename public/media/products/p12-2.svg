@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" role="img">
+
+  <defs>
+    <linearGradient id="bg149" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF1EC"/>
+      <stop offset="100%" stop-color="#FFDCD0"/>
+    </linearGradient>
+    <radialGradient id="glow149" cx="30%" cy="22%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft149" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#9C3A22" flood-opacity="0.16"/>
+    </filter>
+    <pattern id="dots149" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#9C3A22" fill-opacity="0.10"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="640" fill="url(#bg149)"/>
+  <rect width="640" height="640" fill="url(#dots149)"/>
+  <rect width="640" height="640" fill="url(#glow149)"/>
+  <ellipse cx="320" cy="524" rx="150" ry="24" fill="#9C3A22" fill-opacity="0.10"/>
+
+  <g transform="translate(320 300) rotate(12)" filter="url(#soft13)">
+    <path d="M-180 170 L180 170 L-180 -170 Z" fill="#FFFFFF" fill-opacity="0.95"/>
+    <path d="M-180 170 L180 170 L-180 -170 Z" fill="none" stroke="#9C3A22" stroke-opacity="0.18" stroke-width="4"/>
+    <path d="M-130 120 L76 120 L-130 -58 Z" fill="none" stroke="#F06A45" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-120 -130 A 120 120 0 0 1 -120 -130" fill="none" stroke="#9C3A22" stroke-opacity="0.3" stroke-width="5"/>
+    <circle cx="-180" cy="170" r="14" fill="#F7B09B"/>
+    <circle cx="180" cy="170" r="14" fill="#F7B09B"/>
+    <circle cx="-180" cy="-170" r="14" fill="#F7B09B"/>
+  </g>
+</svg>
