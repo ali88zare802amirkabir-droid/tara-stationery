@@ -114,7 +114,8 @@
       rgba(255, 255, 255, 0.75),
       transparent
     );
-    animation: shimmer 1.8s infinite;
+    /* Uses the Tailwind utility so the matching @keyframes are emitted too. */
+    @apply animate-shimmer;
   }
 
   .grid-lines {
