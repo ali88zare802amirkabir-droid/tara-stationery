@@ -736,7 +736,7 @@ export function ProductForm({ product }: { product: Product | null }) {
               </p>
               {effectiveComparePrice && effectiveComparePrice > price ? (
                 <>
-                  <p className="tnum text-xs text-ink-300 line-through">
+                  <p className="tnum text-xs text-ink-400 line-through">
                     {formatPrice(effectiveComparePrice)} تومان
                   </p>
                   <Badge tone="danger">{toPersianDigits(effectiveDiscount)}٪ تخفیف</Badge>
@@ -896,7 +896,7 @@ export function ProductForm({ product }: { product: Product | null }) {
                   </div>
 
                   {values.mainImageIndex === index ? (
-                    <span className="absolute end-2 top-2 rounded-full bg-brand-500 px-2 py-0.5 text-[0.625rem] font-extrabold text-white">
+                    <span className="absolute end-2 top-2 rounded-full bg-brand-600 px-2 py-0.5 text-[0.625rem] font-extrabold text-white">
                       تصویر اصلی
                     </span>
                   ) : null}
@@ -1034,7 +1034,7 @@ export function ProductForm({ product }: { product: Product | null }) {
                     type="button"
                     onClick={() => specs.remove(index)}
                     aria-label={`حذف مشخصه ${index + 1}`}
-                    className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl border border-line text-ink-300 transition-colors hover:border-danger/30 hover:bg-danger-soft hover:text-danger"
+                    className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl border border-line text-ink-400 transition-colors hover:border-danger/30 hover:bg-danger-soft hover:text-danger"
                   >
                     <Trash2 className="h-4 w-4" aria-hidden />
                   </button>
@@ -1105,7 +1105,7 @@ export function ProductForm({ product }: { product: Product | null }) {
                         type="button"
                         onClick={() => variants.remove(index)}
                         aria-label={`حذف گزینه ${index + 1}`}
-                        className="ms-auto grid h-9 w-9 place-items-center rounded-xl text-ink-300 transition-colors hover:bg-danger-soft hover:text-danger"
+                        className="ms-auto grid h-9 w-9 place-items-center rounded-xl text-ink-400 transition-colors hover:bg-danger-soft hover:text-danger"
                       >
                         <Trash2 className="h-4 w-4" aria-hidden />
                       </button>
@@ -1136,7 +1136,7 @@ export function ProductForm({ product }: { product: Product | null }) {
                                       )
                                     }
                                     aria-label={`حذف مقدار ${value}`}
-                                    className="text-brand-400 transition-colors hover:text-brand-700"
+                                    className="text-brand-600 transition-colors hover:text-brand-700"
                                   >
                                     ×
                                   </button>
@@ -1158,7 +1158,7 @@ export function ProductForm({ product }: { product: Product | null }) {
                                 }}
                                 placeholder="مقدار جدید…"
                                 aria-label={`افزودن مقدار به گزینه ${index + 1}`}
-                                className="min-w-28 flex-1 bg-transparent px-1.5 py-1 text-2xs text-ink-800 outline-none placeholder:text-ink-300"
+                                className="min-w-28 flex-1 bg-transparent px-1.5 py-1 text-2xs text-ink-800 outline-none placeholder:text-ink-400"
                               />
                             </div>
                           </FieldShell>

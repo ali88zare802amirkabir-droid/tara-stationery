@@ -135,7 +135,7 @@ export function OrderRequestModal({ open, onClose, total, count }: OrderRequestM
             </Button>
           </div>
 
-          <p className="flex items-start gap-1.5 text-2xs leading-5 text-ink-300">
+          <p className="flex items-start gap-1.5 text-2xs leading-5 text-ink-400">
             <X className="mt-0.5 h-3 w-3 shrink-0" aria-hidden />
             هیچ داده‌ای به سرور ارسال نمی‌شود و سبد خرید پس از ثبت درخواست خالی می‌شود.
           </p>

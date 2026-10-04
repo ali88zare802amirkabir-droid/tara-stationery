@@ -155,7 +155,7 @@ export function ProductTabs({ product }: { product: Product }) {
                 onChange={(event) => setDraft(event.target.value)}
                 rows={3}
                 placeholder="تجربه خود از این محصول را با دیگران به اشتراک بگذارید…"
-                className="mt-2 w-full resize-y rounded-2xl border border-line bg-surface px-3.5 py-3 text-sm outline-none transition-colors placeholder:text-ink-300 focus:border-brand-400 focus:ring-4 focus:ring-brand-500/15"
+                className="mt-2 w-full resize-y rounded-2xl border border-line bg-surface px-3.5 py-3 text-sm outline-none transition-colors placeholder:text-ink-400 focus:border-brand-400 focus:ring-4 focus:ring-brand-500/15"
               />
               <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
                 <p className="text-2xs text-ink-400">

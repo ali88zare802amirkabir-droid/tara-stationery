@@ -74,7 +74,7 @@ export function SearchBox({
             : 'h-11 border-line px-3 focus-within:border-brand-300 focus-within:shadow-soft',
         )}
       >
-        <Search className={cn('shrink-0 text-ink-300', isHero ? 'h-5 w-5' : 'h-4.5 w-4.5')} aria-hidden />
+        <Search className={cn('shrink-0 text-ink-400', isHero ? 'h-5 w-5' : 'h-4.5 w-4.5')} aria-hidden />
         <input
           ref={inputRef}
           type="search"
@@ -87,7 +87,7 @@ export function SearchBox({
           placeholder={placeholder}
           aria-label="جستجوی محصولات"
           aria-controls="search-suggestions"
-          className="min-w-0 flex-1 bg-transparent text-sm text-ink-800 outline-none placeholder:text-ink-300"
+          className="min-w-0 flex-1 bg-transparent text-sm text-ink-800 outline-none placeholder:text-ink-400"
         />
         {query ? (
           <button
@@ -97,7 +97,7 @@ export function SearchBox({
               inputRef.current?.focus();
             }}
             aria-label="پاک کردن جستجو"
-            className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-ink-300 transition-colors hover:bg-surface-sunken hover:text-ink-600"
+            className="grid h-7 w-7 shrink-0 place-items-center rounded-full text-ink-400 transition-colors hover:bg-surface-sunken hover:text-ink-600"
           >
             <X className="h-3.5 w-3.5" aria-hidden />
           </button>
@@ -107,7 +107,7 @@ export function SearchBox({
           className={cn(
             'shrink-0 rounded-full font-bold transition-colors',
             isHero
-              ? 'bg-brand-500 px-4 py-2.5 text-xs text-white hover:bg-brand-600'
+              ? 'bg-brand-600 px-4 py-2.5 text-xs text-white hover:bg-brand-700'
               : 'bg-brand-50 px-3 py-1.5 text-2xs text-brand-700 hover:bg-brand-100',
           )}
         >
@@ -224,7 +224,7 @@ export function RecentSearches({ className }: { className?: string }) {
               href={`/search?q=${encodeURIComponent(tag)}`}
               className="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface-muted px-3 py-1.5 text-2xs font-semibold text-ink-600 transition-colors hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
             >
-              <span className="tnum text-ink-300">{toPersianDigits(index + 1)}</span>
+              <span className="tnum text-ink-400">{toPersianDigits(index + 1)}</span>
               {tag}
             </Link>
           </li>

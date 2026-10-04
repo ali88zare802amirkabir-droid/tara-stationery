@@ -294,7 +294,7 @@ export function AdminCategories() {
                           size="icon"
                           onClick={() => setDeleteTarget(category)}
                           aria-label={`حذف ${category.name}`}
-                          className="h-9 w-9 text-ink-300 hover:bg-danger-soft hover:text-danger"
+                          className="h-9 w-9 text-ink-400 hover:bg-danger-soft hover:text-danger"
                         >
                           <Trash2 className="h-4 w-4" aria-hidden />
                         </Button>
@@ -369,7 +369,7 @@ export function AdminCategories() {
                     aria-pressed={editing.icon === icon}
                     className={`rounded-xl border px-3 py-1.5 text-2xs font-bold transition-colors ${
                       editing.icon === icon
-                        ? 'border-brand-500 bg-brand-500 text-white'
+                        ? 'border-brand-600 bg-brand-600 text-white'
                         : 'border-line text-ink-500 hover:border-brand-300'
                     }`}
                   >

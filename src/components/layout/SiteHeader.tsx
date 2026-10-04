@@ -44,7 +44,7 @@ export function AnnouncementBar() {
     <div className="relative overflow-hidden bg-ink-900 text-white">
       <div className="dot-grid absolute inset-0 opacity-30" aria-hidden />
       <div className="shell relative flex h-9 items-center justify-center gap-2 text-2xs font-semibold">
-        <Truck className="h-3.5 w-3.5 shrink-0 text-brand-300" aria-hidden />
+        <Truck className="h-3.5 w-3.5 shrink-0 text-brand-500" aria-hidden />
         <span className="truncate text-center">{announcement}</span>
       </div>
     </div>
@@ -53,7 +53,7 @@ export function AnnouncementBar() {
 
 function CountBadge({ value }: { value: number }) {
   return (
-    <span className="tnum absolute -top-0.5 -end-0.5 grid h-[1.15rem] min-w-[1.15rem] place-items-center rounded-full bg-brand-500 px-1 text-[0.625rem] font-extrabold text-white ring-2 ring-surface">
+    <span className="tnum absolute -top-0.5 -end-0.5 grid h-[1.15rem] min-w-[1.15rem] place-items-center rounded-full bg-brand-600 px-1 text-[0.625rem] font-extrabold text-white ring-2 ring-surface">
       {toPersianDigits(value > 99 ? 99 : value)}
     </span>
   );

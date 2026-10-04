@@ -58,8 +58,8 @@ export function Logo({
           </span>
           <span
             className={cn(
-              'mt-1 text-[0.6rem] font-semibold',
-              variant === 'light' ? 'text-white/60' : 'text-ink-300',
+              'mt-1 text-[0.6875rem] font-semibold',
+              variant === 'light' ? 'text-white/70' : 'text-ink-500',
             )}
           >
             لوازم‌التحریر حرفه‌ای

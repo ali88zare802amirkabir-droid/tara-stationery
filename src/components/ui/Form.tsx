@@ -3,7 +3,7 @@ import { Check, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const controlBase =
-  'w-full rounded-2xl border bg-surface text-sm text-ink-800 placeholder:text-ink-300 transition-colors duration-200 focus:outline-none focus:ring-4 disabled:cursor-not-allowed disabled:bg-surface-sunken disabled:text-ink-300';
+  'w-full rounded-2xl border bg-surface text-sm text-ink-800 placeholder:text-ink-400 transition-colors duration-200 focus:outline-none focus:ring-4 disabled:cursor-not-allowed disabled:bg-surface-sunken disabled:text-ink-400';
 
 const controlOk = 'border-line hover:border-line-strong focus:border-brand-400 focus:ring-brand-500/15';
 const controlError = 'border-danger/60 hover:border-danger focus:border-danger focus:ring-danger/15';
@@ -81,7 +81,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function Input(
     >
       <div className="relative">
         {leadingIcon && (
-          <span className="pointer-events-none absolute inset-y-0 start-3 flex items-center text-ink-300">
+          <span className="pointer-events-none absolute inset-y-0 start-3 flex items-center text-ink-400">
             {leadingIcon}
           </span>
         )}
@@ -197,7 +197,7 @@ export const Select = forwardRef<HTMLSelectElement, SelectProps>(function Select
           ))}
         </select>
         <ChevronDown
-          className="pointer-events-none absolute inset-y-0 end-3 my-auto h-4 w-4 text-ink-300"
+          className="pointer-events-none absolute inset-y-0 end-3 my-auto h-4 w-4 text-ink-400"
           aria-hidden
         />
       </div>
@@ -225,7 +225,7 @@ export function Checkbox({ label, count, className, id, ...rest }: CheckboxProps
         <input id={checkboxId} type="checkbox" className="peer sr-only" {...rest} />
         <span
           aria-hidden
-          className="flex h-5 w-5 items-center justify-center rounded-md border border-line-strong bg-surface transition-all peer-checked:border-brand-500 peer-checked:bg-brand-500 peer-focus-visible:ring-4 peer-focus-visible:ring-brand-500/20 group-hover:border-brand-300"
+          className="flex h-5 w-5 items-center justify-center rounded-md border border-line-strong bg-surface transition-all peer-checked:border-brand-600 peer-checked:bg-brand-600 peer-focus-visible:ring-4 peer-focus-visible:ring-brand-500/20 group-hover:border-brand-300"
         />
         <Check
           className="pointer-events-none absolute h-3.5 w-3.5 scale-50 text-white opacity-0 transition-all peer-checked:scale-100 peer-checked:opacity-100"
@@ -264,7 +264,7 @@ export function Switch({ label, description, id, name, className, ...rest }: Swi
         <input id={switchId} name={name ?? switchId} type="checkbox" className="peer sr-only" {...rest} />
         <span
           aria-hidden
-          className="block h-6 w-11 rounded-full bg-line-strong transition-colors duration-200 peer-checked:bg-brand-500 peer-focus-visible:ring-4 peer-focus-visible:ring-brand-500/20"
+          className="block h-6 w-11 rounded-full bg-line-strong transition-colors duration-200 peer-checked:bg-brand-600 peer-focus-visible:ring-4 peer-focus-visible:ring-brand-500/20"
         />
         <span
           aria-hidden

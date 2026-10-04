@@ -284,7 +284,7 @@ export function ActiveFilterChips({
             className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-2xs font-bold text-brand-700 transition-colors hover:border-brand-400 hover:bg-brand-100"
           >
             {chip.label}
-            <span aria-hidden className="text-brand-400">
+            <span aria-hidden className="text-brand-500">
               ×
             </span>
             <span className="sr-only">حذف فیلتر</span>

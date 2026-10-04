@@ -148,7 +148,7 @@ export function CartPage() {
                             type="button"
                             onClick={() => removeItem(item.productId, item.variantLabel)}
                             aria-label={`حذف ${item.name} از سبد خرید`}
-                            className="grid h-9 w-9 shrink-0 place-items-center rounded-full text-ink-300 transition-colors hover:bg-danger-soft hover:text-danger"
+                            className="grid h-9 w-9 shrink-0 place-items-center rounded-full text-ink-400 transition-colors hover:bg-danger-soft hover:text-danger"
                           >
                             <Trash2 className="h-4 w-4" aria-hidden />
                           </button>
@@ -183,7 +183,7 @@ export function CartPage() {
                               {formatPrice(item.price * item.quantity)} تومان
                             </p>
                             {item.comparePrice ? (
-                              <p className="tnum text-2xs text-ink-300 line-through">
+                              <p className="tnum text-2xs text-ink-400 line-through">
                                 {formatPrice(item.comparePrice * item.quantity)} تومان
                               </p>
                             ) : null}

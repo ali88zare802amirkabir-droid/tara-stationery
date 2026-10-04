@@ -71,7 +71,7 @@ export function CategoryShowcase() {
                     sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 46vw"
                     className="object-cover transition-transform duration-500 ease-spring group-hover:scale-105"
                   />
-                  <span className="absolute end-2.5 top-2.5 grid h-9 w-9 place-items-center rounded-full border border-line bg-surface/92 text-brand-600 backdrop-blur transition-colors group-hover:bg-brand-500 group-hover:text-white">
+                  <span className="absolute end-2.5 top-2.5 grid h-9 w-9 place-items-center rounded-full border border-line bg-surface/92 text-brand-600 backdrop-blur transition-colors group-hover:bg-brand-600 group-hover:text-white">
                     <Icon className="h-4.5 w-4.5" strokeWidth={2} aria-hidden />
                   </span>
                 </div>

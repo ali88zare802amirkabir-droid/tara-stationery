@@ -179,7 +179,7 @@ export function AdminDashboard() {
                 aria-pressed={range === option}
                 className={cn(
                   'rounded-full px-3.5 py-1.5 text-2xs font-bold transition-colors',
-                  range === option ? 'bg-brand-500 text-white' : 'text-ink-500 hover:text-ink-800',
+                  range === option ? 'bg-brand-600 text-white' : 'text-ink-500 hover:text-ink-800',
                 )}
               >
                 {option === '6m' ? '۶ ماه اخیر' : '۱۲ ماه اخیر'}

@@ -191,7 +191,7 @@ export function AdminBanners() {
                           priority
                         />
                       {isPrimary ? (
-                        <span className="absolute end-3 top-3 rounded-full bg-brand-500 px-2.5 py-1 text-[0.625rem] font-extrabold text-white">
+                        <span className="absolute end-3 top-3 rounded-full bg-brand-600 px-2.5 py-1 text-[0.625rem] font-extrabold text-white">
                           هیرو صفحه اصلی
                         </span>
                       ) : null}
@@ -336,7 +336,7 @@ export function AdminBanners() {
                           size="icon"
                           onClick={() => setDeleteTarget(banner)}
                           aria-label={`حذف بنر ${banner.title}`}
-                          className="h-9 w-9 text-ink-300 hover:bg-danger-soft hover:text-danger"
+                          className="h-9 w-9 text-ink-400 hover:bg-danger-soft hover:text-danger"
                         >
                           <Trash2 className="h-4 w-4" aria-hidden />
                         </Button>
@@ -382,7 +382,7 @@ export function AdminBanners() {
               </p>
               <p className="mt-1 text-2xs text-ink-500">{editing.subtitle || 'زیرعنوان'}</p>
               <div className="mt-3 flex flex-wrap gap-1.5">
-                <span className="rounded-full bg-brand-500 px-3 py-1 text-[0.625rem] font-bold text-white">
+                <span className="rounded-full bg-brand-600 px-3 py-1 text-[0.625rem] font-bold text-white">
                   {editing.buttonText || 'دکمه اصلی'}
                 </span>
                 {editing.secondaryButtonText ? (

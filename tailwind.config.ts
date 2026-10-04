@@ -38,8 +38,11 @@ const config: Config = {
           700: '#1F2D4A',
           600: '#33435F',
           500: '#4A5B78',
-          400: '#6B7B96',
-          300: '#94A3BC',
+          // 400 and 300 are the lightest steps allowed for text/icon use.
+          // Both were measured at 3.99:1 and 2.38:1 on the canvas background,
+          // below the 4.5:1 WCAG AA floor, so they were darkened.
+          400: '#5A6985',
+          300: '#7E8CA8',
           200: '#C2CDDF',
           100: '#E3E9F4',
         },

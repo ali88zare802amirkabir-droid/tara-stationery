@@ -311,7 +311,7 @@ export function AdminProducts() {
                           {formatPrice(product.price)}
                         </span>
                         {product.comparePrice ? (
-                          <span className="tnum block text-[0.625rem] text-ink-300 line-through">
+                          <span className="tnum block text-[0.625rem] text-ink-400 line-through">
                             {formatPrice(product.comparePrice)}
                           </span>
                         ) : null}
@@ -332,7 +332,7 @@ export function AdminProducts() {
                             {toPersianDigits(discount)}٪
                           </Badge>
                         ) : (
-                          <span className="text-ink-300">—</span>
+                          <span className="text-ink-400">—</span>
                         )}
                       </td>
                       <td className="px-3 py-3">

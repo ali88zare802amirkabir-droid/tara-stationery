@@ -27,7 +27,7 @@ export default function GlobalError({
         بخشی از فروشگاه نتوانست نمایش داده شود. می‌توانید دوباره تلاش کنید یا به صفحه اصلی بروید.
       </p>
       {error.digest ? (
-        <p className="tnum mt-3 text-2xs text-ink-300">کد خطا: {error.digest}</p>
+        <p className="tnum mt-3 text-2xs text-ink-400">کد خطا: {error.digest}</p>
       ) : null}
 
       <div className="mt-8 flex flex-col gap-2.5 sm:flex-row">

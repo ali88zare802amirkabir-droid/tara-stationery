@@ -142,7 +142,7 @@ export const CartDrawer = memo(function CartDrawer() {
                       type="button"
                       onClick={() => removeItem(item.productId, item.variantLabel)}
                       aria-label={`حذف ${item.name} از سبد خرید`}
-                      className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-ink-300 transition-colors hover:bg-danger-soft hover:text-danger"
+                      className="grid h-8 w-8 shrink-0 place-items-center rounded-full text-ink-400 transition-colors hover:bg-danger-soft hover:text-danger"
                     >
                       <Trash2 className="h-3.5 w-3.5" aria-hidden />
                     </button>
@@ -180,7 +180,7 @@ export const CartDrawer = memo(function CartDrawer() {
                         {formatPrice(item.price * item.quantity)}
                       </p>
                       {item.comparePrice ? (
-                        <p className="tnum text-[0.625rem] text-ink-300 line-through">
+                        <p className="tnum text-[0.625rem] text-ink-400 line-through">
                           {formatPrice(item.comparePrice * item.quantity)}
                         </p>
                       ) : null}

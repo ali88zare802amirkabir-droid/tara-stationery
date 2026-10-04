@@ -221,7 +221,7 @@ export function ContactPage() {
             </FieldShell>
 
             <div className="flex flex-col gap-3 pt-1 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-2xs text-ink-300">با ارسال پیام، قوانین حریم خصوصی را می‌پذیرید.</p>
+              <p className="text-2xs text-ink-400">با ارسال پیام، قوانین حریم خصوصی را می‌پذیرید.</p>
               <Button type="submit" leadingIcon={<Send className="h-4 w-4" aria-hidden />}>
                 ارسال پیام
               </Button>

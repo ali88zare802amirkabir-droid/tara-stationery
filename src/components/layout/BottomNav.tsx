@@ -66,7 +66,7 @@ export function BottomNav() {
             <span className="relative">
               <ShoppingBag className="h-5 w-5" strokeWidth={1.9} aria-hidden />
               {mounted && cartCount > 0 ? (
-                <span className="tnum absolute -top-1 -end-1.5 grid h-4 min-w-4 place-items-center rounded-full bg-brand-500 px-1 text-[0.5rem] font-extrabold text-white">
+                <span className="tnum absolute -top-1 -end-1.5 grid h-4 min-w-4 place-items-center rounded-full bg-brand-600 px-1 text-[0.5rem] font-extrabold text-white">
                   {toPersianDigits(cartCount)}
                 </span>
               ) : null}

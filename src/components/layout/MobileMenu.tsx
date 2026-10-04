@@ -69,7 +69,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
                           {link.description}
                         </span>
                       </span>
-                      <ChevronLeft className="h-4 w-4 shrink-0 text-ink-300" aria-hidden />
+                      <ChevronLeft className="h-4 w-4 shrink-0 text-ink-400" aria-hidden />
                     </Link>
                   </li>
                 );
@@ -112,7 +112,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             <Link
               href="/cart"
               onClick={onClose}
-              className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-brand-500 py-2.5 text-2xs font-bold text-white transition-colors hover:bg-brand-600"
+              className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-brand-600 py-2.5 text-2xs font-bold text-white transition-colors hover:bg-brand-700"
             >
               <ShoppingBag className="h-4 w-4" aria-hidden />
               سبد خرید
@@ -143,7 +143,7 @@ export function MobileMenu({ open, onClose }: { open: boolean; onClose: () => vo
             <LayoutDashboard className="h-4 w-4 text-brand-500" aria-hidden />
             ورود به پنل مدیریت
           </Link>
-          <p className="flex items-center justify-center gap-1.5 pt-1 text-2xs text-ink-300">
+          <p className="flex items-center justify-center gap-1.5 pt-1 text-2xs text-ink-400">
             <LogIn className="h-3 w-3" aria-hidden />
             نسخه نمایشی — بدون ورود به حساب
           </p>

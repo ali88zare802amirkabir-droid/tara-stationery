@@ -155,7 +155,7 @@ function ProductCardBase({ product, priority = false, className, compact = false
               onClick={handleAdd}
               disabled={outOfStock}
               aria-label={`افزودن ${product.name} به سبد خرید`}
-              className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-full bg-brand-50 text-2xs font-extrabold text-brand-700 transition-all duration-200 hover:bg-brand-500 hover:text-white disabled:pointer-events-none disabled:opacity-45"
+              className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-full bg-brand-50 text-2xs font-extrabold text-brand-700 transition-all duration-200 hover:bg-brand-600 hover:text-white disabled:pointer-events-none disabled:opacity-45"
             >
               <ShoppingCart className="h-3.5 w-3.5" aria-hidden />
               {outOfStock ? 'ناموجود' : 'افزودن به سبد'}

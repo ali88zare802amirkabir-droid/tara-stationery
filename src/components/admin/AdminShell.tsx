@@ -49,7 +49,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
     <div className="flex min-h-dvh bg-canvas">
       <a
         href="#admin-main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[110] focus:rounded-full focus:bg-brand-500 focus:px-4 focus:py-2 focus:text-xs focus:font-bold focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[110] focus:rounded-full focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-xs focus:font-bold focus:text-white"
       >
         رفتن به محتوای اصلی
       </a>
@@ -99,7 +99,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
             </Link>
 
             <div className="flex items-center gap-2.5 border-s border-line ps-3">
-              <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-500 text-2xs font-extrabold text-white">
+              <span className="grid h-9 w-9 place-items-center rounded-xl bg-brand-600 text-2xs font-extrabold text-white">
                 مد
               </span>
               <span className="hidden leading-tight md:block">
@@ -119,7 +119,7 @@ export function AdminShell({ children }: { children: ReactNode }) {
                 className={cn(
                   'shrink-0 rounded-full px-3 py-1.5 text-2xs font-bold transition-colors',
                   pathname === item.href
-                    ? 'bg-brand-500 text-white'
+                    ? 'bg-brand-600 text-white'
                     : 'bg-surface-sunken text-ink-500 hover:text-ink-800',
                 )}
               >

@@ -22,7 +22,7 @@ export function StoreShell({ children }: { children: ReactNode }) {
     <>
       <a
         href="#main"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[110] focus:rounded-full focus:bg-brand-500 focus:px-4 focus:py-2 focus:text-xs focus:font-bold focus:text-white"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:start-3 focus:z-[110] focus:rounded-full focus:bg-brand-600 focus:px-4 focus:py-2 focus:text-xs focus:font-bold focus:text-white"
       >
         رفتن به محتوای اصلی
       </a>

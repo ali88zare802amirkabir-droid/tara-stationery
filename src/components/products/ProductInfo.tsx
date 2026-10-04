@@ -139,7 +139,7 @@ export function ProductInfo({ product }: { product: Product }) {
                   className={cn(
                     'rounded-full border px-3.5 py-1.5 text-2xs font-bold transition-colors',
                     variant === value
-                      ? 'border-brand-500 bg-brand-500 text-white'
+                      ? 'border-brand-600 bg-brand-600 text-white'
                       : 'border-line bg-surface text-ink-600 hover:border-brand-300 hover:text-brand-700',
                   )}
                 >

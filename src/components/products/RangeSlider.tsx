@@ -48,7 +48,7 @@ export function RangeSlider({
     <div className="pt-1">
       <div className="mb-3 flex items-center justify-between text-2xs font-bold text-ink-600">
         <span className="tnum">{toPersianDigits(Math.round(low))}</span>
-        <span className="text-ink-300">تا</span>
+        <span className="text-ink-400">تا</span>
         <span className="tnum">{toPersianDigits(Math.round(high))}</span>
       </div>
 
@@ -81,7 +81,7 @@ export function RangeSlider({
         />
       </div>
 
-      <div className="mt-2 flex items-center justify-between text-[0.625rem] text-ink-300">
+      <div className="mt-2 flex items-center justify-between text-[0.625rem] text-ink-400">
         <span className="tnum">{toPersianDigits(min)}</span>
         <span className="tnum">{toPersianDigits(max)}</span>
       </div>

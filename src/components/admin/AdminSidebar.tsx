@@ -92,7 +92,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
       </div>
 
       <nav aria-label="منوی پنل مدیریت" className="flex-1 overflow-y-auto p-3">
-        <p className="px-3 pb-2 pt-3 text-2xs font-bold text-ink-300">مدیریت فروشگاه</p>
+        <p className="px-3 pb-2 pt-3 text-2xs font-bold text-ink-400">مدیریت فروشگاه</p>
         <ul className="space-y-1">
           {adminNav.map((item) => {
             const active = isActive(pathname, item);
@@ -111,7 +111,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
                   {active ? (
                     <motion.span
                       layoutId="admin-nav-active"
-                      className="absolute inset-0 rounded-2xl bg-brand-500 shadow-[0_10px_24px_-14px_rgba(52,89,206,0.9)]"
+                      className="absolute inset-0 rounded-2xl bg-brand-600 shadow-[0_10px_24px_-14px_rgba(52,89,206,0.9)]"
                       transition={{ type: 'spring', stiffness: 400, damping: 34 }}
                     />
                   ) : null}
@@ -128,7 +128,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
                     <span
                       className={cn(
                         'mt-0.5 block truncate text-2xs',
-                        active ? 'text-white/70' : 'text-ink-300',
+                        active ? 'text-white/70' : 'text-ink-400',
                       )}
                     >
                       {item.description}
@@ -181,7 +181,7 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
           </span>
           <span className="min-w-0">
             <span className="block truncate text-xs font-bold">مشاهده فروشگاه</span>
-            <span className="block truncate text-2xs text-ink-300">بازگشت به سایت</span>
+            <span className="block truncate text-2xs text-ink-400">بازگشت به سایت</span>
           </span>
         </Link>
       </div>

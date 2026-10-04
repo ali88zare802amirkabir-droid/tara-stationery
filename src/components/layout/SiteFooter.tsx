@@ -87,12 +87,12 @@ export function SiteFooter() {
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
                 placeholder="ایمیل شما"
-                className="h-11 min-w-0 flex-1 rounded-2xl border border-line bg-surface px-3.5 text-sm text-ink-800 outline-none transition-colors placeholder:text-ink-300 focus:border-brand-400 focus:ring-4 focus:ring-brand-500/15"
+                className="h-11 min-w-0 flex-1 rounded-2xl border border-line bg-surface px-3.5 text-sm text-ink-800 outline-none transition-colors placeholder:text-ink-400 focus:border-brand-400 focus:ring-4 focus:ring-brand-500/15"
               />
               <button
                 type="submit"
                 aria-label="عضویت در خبرنامه"
-                className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-brand-500 text-white transition-colors hover:bg-brand-600"
+                className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-brand-600 text-white transition-colors hover:bg-brand-700"
               >
                 <Send className="h-4 w-4" aria-hidden />
               </button>
@@ -188,7 +188,7 @@ export function SiteFooter() {
             © {toPersianDigits(1404)} فروشگاه {settings.storeName} — تمامی حقوق محفوظ است.
           </p>
           <p className="flex items-center gap-1.5">
-            <Sparkles className="h-3.5 w-3.5 text-brand-400" aria-hidden />
+            <Sparkles className="h-3.5 w-3.5 text-brand-500" aria-hidden />
             نسخه نمایشی فرانت‌اند — بدون درگاه پرداخت و بک‌اند
           </p>
         </div>

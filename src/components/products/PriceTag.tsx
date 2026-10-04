@@ -33,7 +33,7 @@ export function PriceTag({ product, size = 'md', align = 'start', className, sho
       {showUnit ? <span className="text-2xs font-medium text-ink-400">تومان</span> : null}
       {product.comparePrice && product.comparePrice > product.price ? (
         <>
-          <span className={cn('tnum font-medium text-ink-300 line-through', sizes.old)}>
+          <span className={cn('tnum font-medium text-ink-400 line-through', sizes.old)}>
             {formatPrice(product.comparePrice)}
           </span>
           <span

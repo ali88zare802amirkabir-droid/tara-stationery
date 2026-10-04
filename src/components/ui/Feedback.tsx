@@ -152,7 +152,7 @@ export function Pagination({
       </button>
       {pages.map((entry, index) =>
         entry === 'gap' ? (
-          <span key={`gap-${index}`} className="px-1 text-ink-300">
+          <span key={`gap-${index}`} className="px-1 text-ink-400">
             …
           </span>
         ) : (
@@ -164,7 +164,7 @@ export function Pagination({
             className={cn(
               'tnum h-10 min-w-10 rounded-xl px-3 text-xs font-bold transition-colors',
               entry === page
-                ? 'bg-brand-500 text-white shadow-[0_8px_18px_-10px_rgba(52,89,206,0.9)]'
+                ? 'bg-brand-600 text-white shadow-[0_8px_18px_-10px_rgba(52,89,206,0.9)]'
                 : 'border border-line bg-surface text-ink-600 hover:border-brand-300 hover:text-brand-700',
             )}
           >

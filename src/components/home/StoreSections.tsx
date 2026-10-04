@@ -31,24 +31,25 @@ export function BrandsRow() {
         <h2 className="text-display-sm text-ink-900">همکاری با نمایندگان رسمی</h2>
       </div>
 
-      <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+      <ul className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
         {uniqueBrands.map((brand) => (
           <li key={brand}>
             <Link
               href={`/products?brand=${encodeURIComponent(brand)}`}
-              className="group flex flex-col items-center gap-1.5 rounded-2xl border border-line bg-canvas px-3 py-3 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:bg-surface hover:shadow-soft"
+              className="group flex flex-col items-center gap-2.5 rounded-2xl border border-line bg-surface p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-200 hover:shadow-soft"
             >
-              <span className="relative h-10 w-10 overflow-hidden rounded-xl">
+              {/* Wordmarks are 2:1, so they must never be cropped into a square. */}
+              <span className="relative block h-12 w-full overflow-hidden rounded-xl">
                 <Image
                   src={`/media/brands/brand-${BRAND_ART[brand] ?? 'atlas'}.svg`}
                   alt={`برند ${brand}`}
                   fill
                   loading="lazy"
-                  sizes="40px"
-                  className="object-cover"
+                  sizes="(min-width: 1024px) 290px, (min-width: 640px) 33vw, 45vw"
+                  className="object-contain"
                 />
               </span>
-              <span className="text-2xs font-bold text-ink-600 transition-colors group-hover:text-brand-700">
+              <span className="text-xs font-bold text-ink-600 transition-colors group-hover:text-brand-700">
                 {brand}
               </span>
             </Link>
