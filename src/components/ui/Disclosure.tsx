@@ -157,7 +157,7 @@ export function Tabs({
             {active ? (
               <motion.span
                 layoutId={`tab-pill-${tabs.map((t) => t.id).join('-')}`}
-                className="absolute inset-0 rounded-xl bg-brand-500"
+                className="absolute inset-0 rounded-xl bg-brand-600"
                 transition={{ type: 'spring', stiffness: 420, damping: 34 }}
               />
             ) : null}

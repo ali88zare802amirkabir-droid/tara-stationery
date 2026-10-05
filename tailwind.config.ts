@@ -49,7 +49,7 @@ const config: Config = {
         success: { DEFAULT: '#0E9F6E', soft: '#E6F7F1', strong: '#077452' },
         warning: { DEFAULT: '#C2740B', soft: '#FDF3E1', strong: '#8E5405' },
         danger: { DEFAULT: '#DC2B45', soft: '#FDECEF', strong: '#A3172C' },
-        info: { DEFAULT: '#2F7BE8', soft: '#EAF2FE' },
+        info: { DEFAULT: '#2560BE', soft: '#EAF2FE' },
         accent: { DEFAULT: '#7C4DE8', soft: '#F1EBFE' },
         blush: { DEFAULT: '#E5306A', soft: '#FEECF1' },
       },
