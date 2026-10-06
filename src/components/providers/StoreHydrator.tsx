@@ -17,6 +17,25 @@ export function StoreHydrator() {
     useWishlistStore.getState().hydrate();
     useCatalogStore.getState().hydrate();
     setReady(true);
+    // Replace the seeded demo dataset with live Postgres data when available.
+    (async () => {
+      try {
+        const [p, c, b] = await Promise.all([
+          fetch('/api/products').then((r) => (r.ok ? r.json() : null)),
+          fetch('/api/categories').then((r) => (r.ok ? r.json() : null)),
+          fetch('/api/banners').then((r) => (r.ok ? r.json() : null)),
+        ]);
+        if (p?.products?.length) {
+          useCatalogStore.setState({
+            products: p.products,
+            categories: c?.categories ?? useCatalogStore.getState().categories,
+            banners: b?.banners ?? useCatalogStore.getState().banners,
+          });
+        }
+      } catch {
+        // Keep the seeded fallback when the server / DB is unreachable.
+      }
+    })();
   }, []);
 
   useEffect(() => {
